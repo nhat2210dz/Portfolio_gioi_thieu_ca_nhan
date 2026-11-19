@@ -1,58 +1,71 @@
 
- PORTFOLIO SINH VIÊN NĂM NHẤT CNTT - CHÀO XUÂN ĐINH MÙI 2027
+ TÀI LIỆU BÀN GIAO DỰ ÁN: PORTFOLIO CÁ NHÂN PHONG CÁCH TẾT
 
-Dự án website tĩnh giới thiệu bản thân (Personal Portfolio) được thiết kế theo phong cách Tết cổ truyền Việt Nam. Sản phẩm thuộc Bài tập lớn A3 của học phần FIT4014 - Thiết kế Web và Triển khai Hệ thống Phần mềm, Khoa Công nghệ Thông tin, Trường Đại học Đại Nam.
+Tài liệu này cung cấp đầy đủ thông tin kỹ thuật, cấu trúc mã nguồn, hướng dẫn vận hành và các đầu việc cần tiếp tục triển khai dành cho người tiếp nhận dự án.
 
- 1. Thông Tin Sinh Viên & Học Phần
+ 1. Thông Tin Chung Về Dự Án
 
-• Họ và tên sinh viên: Nguyễn Việt Nhật 
-• Mã số sinh viên: 2071020147
-• Lớp / Ngành: CNTT K21 - Công nghệ Thông tin
-• Giảng viên hướng dẫn: ThS. Lê Thái Bảo
-• Liên kết Repository:https://github.com/nhat2210dz/Portfolio_gioi_thieu_ca_nhan.git
-• Liên kết Website (GitHub Pages): https://nhat2210dz.github.io/Portfolio_gioi_thieu_ca_nhan/
+• Tên dự án: Website Portfolio Giới thiệu Bản thân - Chủ đề Khai Xuân Đinh Mùi 2027.
+• Ngữ cảnh thực hiện: Bài tập lớn A3 - Học phần Thiết kế Web và Triển khai Hệ thống Phần mềm (FIT4014), Trường Đại học Đại Nam.
+• Người bàn giao: Nguyễn Việt Nhật 
+• Người tiếp nhận: [Họ tên người tiếp nhận / Thành viên nhóm]
+• Trạng thái hiện tại: Đã hoàn thiện giao diện tĩnh (HTML5/CSS3), hiệu ứng chuyển động, tính năng tương tác cơ bản (JS) và tương thích đa thiết bị (Responsive).
+• Liên kết Kho mã nguồn (GitHub): https://github.com/nhat2210dz/Portfolio_gioi_thieu_ca_nhan.git
+• Liên kết Bản chạy thử (Live Demo): https://nhat2210dz.github.io/Portfolio_gioi_thieu_ca_nhan/
 
- 2. Mục Tiêu & Phạm Vi Dự Án (Đáp ứng TC1)
+ 2. Kiến Trúc Mã Nguồn & Cấu Trúc Thư Mục
 
-• Đối tượng người xem: Giảng viên chấm bài, bạn bè cùng lớp và nhà tuyển dụng thực tập sinh IT.
-• Mục tiêu: Trình bày thông tin cá nhân, lộ trình học tập năm nhất và năng lực lập trình cơ bản thông qua giao diện web sinh động, mang không khí tích cực ngày Tết.
-• Phạm vi kỹ thuật: Website tĩnh thuần túy sử dụng HTML5 ngữ nghĩa và CSS3 (tích hợp kỹ thuật Flexbox, CSS Grid, CSS Animations và Media Queries cho giao diện Responsive), kết hợp một hàm JavaScript cơ bản cho tính năng tương tác "Hái lộc đầu năm". Không sử dụng thư viện CSS/JS bên ngoài để đảm bảo tốc độ tải trang tối đa.
-
- 3. Cấu Trúc Thư Mục Dự Án (Đáp ứng TC2b)
-
-Toàn bộ mã nguồn được tổ chức gọn gàng, tách biệt hoàn toàn giữa cấu trúc nội dung và định dạng giao diện:
+Dự án được xây dựng theo kiến trúc tách biệt hoàn toàn giữa nội dung (HTML) và định dạng (CSS), không phụ thuộc vào các framework bên ngoài để người tiếp nhận dễ dàng đọc hiểu và bảo trì:
 text
 Hãy thận trọng khi sử dụng mã.
 BaiTapLon_A3/
 │
-├── index.html          # Tệp cấu trúc nội dung chính (HTML5 Semantics) & logic hái lộc
-├── style.css           # Tệp định dạng giao diện, màu sắc Tết, hiệu ứng hoa rơi & Responsive
-├── README.md           # Tài liệu hướng dẫn sử dụng, triển khai và bàn giao dự án
-└── AI_LOG.md           # Nhật ký khai báo quá trình sử dụng công cụ AI hỗ trợ (nếu có)
+├── index.html          # [Tệp chính] Chứa toàn bộ khung nội dung, bố cục các phần và script hái lộc
+├── style.css           # [Tệp giao diện] Chứa hệ thống biến màu, hiệu ứng hoa rơi, layout & responsive
+├── README.md           # [Tài liệu] Hướng dẫn bàn giao kỹ thuật (tệp hiện tại)
+└── AI_LOG.md           # [Tài liệu] Nhật ký ghi chép quá trình sử dụng công cụ hỗ trợ (nếu cần nộp)
 
- 4. Hướng Dẫn Cài Đặt & Chạy Dự Án (Đáp ứng TC3 & TC5)
+ 3. Hướng Dẫn Thiết Lập & Chỉnh Sửa Nhanh (Dành cho người tiếp nhận)
 
 
-Cách 1: Chạy trực tiếp trên máy tính cá nhân (Local)
+Bước 1: Tải mã nguồn về máy
 
-1. Tải toàn bộ thư mục dự án về máy tính hoặc clone qua Git:
+Mở Terminal hoặc Git Bash và chạy lệnh sau để lấy phiên bản mới nhất:
 bash
 Hãy thận trọng khi sử dụng mã.
-   git clone https://github.com/[username]/[ten-repo].git
-1. Mở thư mục dự án bằng phần mềm Visual Studio Code.
-2. Đảm bảo tệp index.html và style.css nằm cùng một cấp thư mục.
-3. Nhấp chuột phải vào tệp index.html chọn Open with Live Server (hoặc nhấp đúp chuột để mở trực tiếp bằng trình duyệt Chrome, Edge, Safari).
+git clone https://github.com/[username]/[ten-repo].git
+cd [ten-repo]
 
-Cách 2: Truy cập trực tuyến
+Bước 2: Môi trường phát triển
 
-Truy cập trực tiếp vào đường dẫn GitHub Pages đã được triển khai công khai ở Mục 1 trên cả máy tính và điện thoại di động để kiểm tra tính năng tương thích màn hình (Responsive).
+• Mở thư mục bằng Visual Studio Code.
+• Khuyến nghị cài đặt tiện ích mở rộng Live Server để xem trực tiếp các thay đổi giao diện theo thời gian thực khi lưu tệp (Ctrl + S).
 
- 5. Kết Quả Kiểm Thử & Giới Hạn Đã Biết (Đáp ứng TC4)
+Bước 3: Bản đồ các vị trí cần tùy chỉnh trong mã nguồn
 
-• Trạng thái hiển thị: Đã kiểm thử thành công trên màn hình Desktop (1920x1080) và chế độ giả lập điện thoại di động (375x812 - iPhone 11/12/13). Thanh điều hướng tự động xếp dọc và bảng thông tin tự động căn giữa trên màn hình hẹp.
-• Giới hạn hiện tại:
-	• Hiệu ứng hoa mai/đào rơi sử dụng biểu tượng cảm xúc (Emoji) hệ thống nên hình dạng biểu tượng có thể hiển thị hơi khác nhau giữa hệ điều hành Windows và macOS/iOS.
-	• Website là trang tĩnh (Static Web) nên dữ liệu lời chúc hiện đang được lưu cố định trong mảng JavaScript thay vì kết nối cơ sở dữ liệu.
+Nếu bạn cần cập nhật nội dung hoặc thay đổi giao diện, hãy tìm đúng các khu vực đã được đánh dấu chú thích sẵn trong tệp:
+1. Thay đổi thông tin cá nhân & nội dung (index.html):
+	• Tìm thẻ <header> (dòng 26–35): Thay đổi tiêu đề chính và câu đối Tết.
+	• Tìm thẻ <section id="tong-quan"> (dòng 40–68): Cập nhật Họ tên, Mã sinh viên, Lớp và Email.
+	• Tìm thẻ <section id="ky-nang"> (dòng 89–114): Điều chỉnh tên kỹ năng và thuộc tính style="width: XX%;" của thanh .progress-fill để thay đổi phần trăm năng lực.
+	• Tìm thẻ <script> ở cuối tệp (dòng 150–168): Chỉnh sửa mảng const wishes = [...] để thêm hoặc bớt các câu chúc Tết ngẫu nhiên.
+2. Thay đổi màu sắc chủ đạo & hiệu ứng (style.css):
+	• Tìm khối :root (dòng 6–15): Toàn bộ bảng màu Tết (--red-tet, --gold-tet, --green-tet, --bg-creamy) được khai báo tập trung tại đây. Chỉ cần đổi mã màu tại :root, toàn bộ trang web sẽ tự động cập nhật đồng bộ.
+	• Tìm khối /* HIỆU ỨNG HOA RƠI */ (dòng 31–68): Điều chỉnh animation-duration tại các lớp .petal:nth-child(n) nếu muốn hoa rơi nhanh hoặc chậm hơn.
+	• Tìm khối /* ĐÁP ỨNG DI ĐỘNG */ (dòng 350–392): Chứa các quy tắc @media (max-width: 768px) xử lý giao diện trên điện thoại.
+
+ 4. Danh Sách Công Việc Tồn Đọng & Đề Xuất Phát Triển Tiếp
+
+Người tiếp nhận có thể tiếp tục hoàn thiện các hạng mục sau trước khi chốt phiên bản bàn giao cuối cùng:
+• [ ] Thay thế dữ liệu mẫu: Điền đầy đủ thông tin thật của sinh viên vào các trường đang để trống/giả định trong index.html.
+• [ ] Nâng cấp ảnh đại diện: Thay thế biểu tượng cảm xúc trong lớp .avatar-emoticon bằng thẻ <img> trỏ tới ảnh chân dung thật (khuyến nghị ảnh vuông tỉ lệ 1:1, dung lượng dưới 500KB).
+• [ ] Kiểm thử chéo trình duyệt (Cross-browser Testing): Kiểm tra lại độ mượt của hiệu ứng @keyframes fall trên trình duyệt Safari (iOS) và Firefox.
+• [ ] Cập nhật phiên bản triển khai: Sau khi chỉnh sửa xong, cần commit lên nhánh main và kiểm tra lại đường dẫn GitHub Pages để đảm bảo bản chạy trực tuyến khớp với mã nguồn mới nhất.
+
+ 5. Lưu Ý Kỹ Thuật Quan Trọng
+
+• Đường dẫn tương đối: Tuyệt đối giữ tệp index.html và style.css nằm cùng một cấp thư mục gốc, nếu di chuyển style.css vào thư mục con (ví dụ css/style.css), bắt buộc phải cập nhật lại thẻ <link rel="stylesheet" href="..."> ở dòng 9 của tệp index.html.
+• Quy chuẩn bàn giao: Mọi thay đổi lớn về giao diện cần được chụp ảnh màn hình trước/sau để bổ sung vào phần minh chứng kiểm thử trong báo cáo kỹ thuật.
 
  6. Khai Báo Nguồn & Bản Quyền (Đáp ứng TC7)
 
